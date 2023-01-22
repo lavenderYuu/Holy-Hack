@@ -5,7 +5,7 @@ html {
 
 body{
     margin: 8%;
-    background-image: linear-gradient(rgba(4,9,30,0.4),rgba(4,9,30,0.4)), url(pexels-philippe-donn-1169754.jpg);
+    background-image: linear-gradient(rgba(4,9,30,0.2),rgba(4,9,30,0.2)), url(pexels-philippe-donn-1169754.jpg);
     /* background-color: #D8F9FF; */
     /* width:100%; */
     background-position: center;
