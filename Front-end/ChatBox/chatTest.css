@@ -5,9 +5,10 @@ html {
 
 body{
     margin: auto;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(pinkf.png);
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(build.jpeg);
     background-color: #D8F9FF;
 }
+
 .chat-bar-collapsible {
     position: fixed;
     bottom: 0;
