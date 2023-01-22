@@ -4,7 +4,7 @@ html {
 }
 
 body{
-    margin: 10%;
+    margin: 8%;
     background-image: linear-gradient(rgba(4,9,30,0.4),rgba(4,9,30,0.4)), url(pexels-philippe-donn-1169754.jpg);
     /* background-color: #D8F9FF; */
     /* width:100%; */
@@ -21,7 +21,7 @@ body{
 }
 
 .collapsible {
-    background-color: #2b1f66;
+    background-color: #231e3f;
     color: white;
     /* cursor: pointer; */
     padding: 18px;
@@ -46,7 +46,7 @@ body{
 }
 
 .outer-container {
-    min-height: 500px;
+    min-height: 600px;
     bottom: 0%;
     position: relative;
 }
@@ -173,7 +173,7 @@ body{
 .test-col img{
     
     height: 400px;
-    /* margin-left: 10%; */
+    margin-left: 5%;
     /* margin-top: 5%; */
     margin-right: 30px;
     border-radius: 50%;
