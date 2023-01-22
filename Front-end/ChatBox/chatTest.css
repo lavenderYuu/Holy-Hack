@@ -1,37 +1,42 @@
 html {
     scroll-behavior: smooth;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: sans-serif;
 }
 
 body{
-    margin: auto;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(build.jpeg);
-    background-color: #D8F9FF;
+    margin: 10%;
+    background-image: linear-gradient(rgba(4,9,30,0.4),rgba(4,9,30,0.4)), url(pexels-philippe-donn-1169754.jpg);
+    /* background-color: #D8F9FF; */
+    /* width:100%; */
+    background-position: center;
+    background-size: cover;
+    position: relative;
 }
 
 .chat-bar-collapsible {
     position: fixed;
     bottom: 0;
     right: 50px;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 26px 26px 0 rgb(248, 247, 247);
 }
 
 .collapsible {
-    background-color: rgb(82, 151, 255);
+    background-color: #2b1f66;
     color: white;
-    cursor: pointer;
+    /* cursor: pointer; */
     padding: 18px;
-    width: 350px;
+    width: 550px;
     text-align: left;
     outline: none;
     font-size: 18px;
     border-radius: 10px 10px 0px 0px;
-    border: 3px solid white;
+    border: 3px solid rgb(255, 255, 255);
     border-bottom: none;
 }
 
 .full-chat-block {
-    width: 350px;
+    width: 550px;
+    height: 80%;
     background: white;
     text-align: center;
     overflow: auto;
@@ -116,12 +121,12 @@ body{
 .userText span {
     line-height: 1.5em;
     display: inline-block;
-    background: #5ca6fa;
+    background: #4a3c93;
     padding: 10px;
     border-radius: 8px;
     border-bottom-right-radius: 2px;
     max-width: 80%;
-    margin-right: 10px;
+    margin-right: 15px;
     animation: floatup .5s forwards
 }
 
@@ -136,25 +141,15 @@ body{
 .botText span {
     line-height: 1.5em;
     display: inline-block;
-    background: #e0e0e0;
+    background: #a094db;
     padding: 10px;
     border-radius: 8px;
     border-bottom-left-radius: 2px;
     max-width: 80%;
-    margin-left: 10px;
+    margin-left: 15px;
     animation: floatup .5s forwards
 }
 
-@keyframes floatup {
-    from {
-        transform: translateY(14px);
-        opacity: .0;
-    }
-    to {
-        transform: translateY(0px);
-        opacity: 1;
-    }
-}
 
 @media screen and (max-width:600px) {
     .full-chat-block {
@@ -178,8 +173,8 @@ body{
 .test-col img{
     
     height: 400px;
-    margin-left: 10%;
-    margin-top: 5%;
+    /* margin-left: 10%; */
+    /* margin-top: 5%; */
     margin-right: 30px;
     border-radius: 50%;
     
