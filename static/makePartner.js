@@ -9,6 +9,6 @@ function makePtner(){
             'Accept': 'application/json, text/plain, */*',
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify({"prompts": gender + " person with " + prompts})
+        body: JSON.stringify({"prompts": gender + " beautiful person with " + prompts})
     }).then(response => window.location.assign("http://127.0.0.1:5000/chatbox"))
 }
