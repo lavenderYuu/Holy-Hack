@@ -1,0 +1,261 @@
+<html>
+
+<head>
+
+</head>
+<style>
+    p {
+        background-color:rgb(247, 196, 211);
+    }
+    </style>
+
+<h1 style="color:rgb(253, 237, 246);">Make your cyber friend!&#128125</h1>
+<body background="stars.png"><button id="myBtn">about this web</button>
+
+    <div id="myModal" class="modal">
+
+    
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">◊</span>
+                <h2>About this website</h2>
+            </div>
+            <div class="modal-body">
+                <p>About : Do you want a cyber friend to chat with to relax or even heal your soul?
+                    Here you can chat with a considerate friend of your type! &#128521 Whether you're someone who struggles with friendship/relationship, 
+                    suffers from social anxiety, or simply wants to improve your chatting skills,this is a good place to have fun!
+                    Go ahead and start your love journey!&#128522
+                </p>
+
+            </div>
+            <div class="modal-footer">
+                <h3>Have a wonderful journey!&#128516</h3>
+            </div>
+        </div>
+
+    </div>
+    <style>
+        .modal {
+            display: none;
+            position: fixed; 
+            z-index: 1; 
+            padding-top: 100px; 
+            left: 0;
+            top: 0;
+            width: 100%; 
+            height: 100%; 
+            overflow: auto; 
+            background-color: rgb(0,0,0); 
+            background-color: rgba(0,0,0,0.4);
+        }
+        
+        .modal-content {
+            position: relative;
+            background-color: #fefefe;
+            margin: auto;
+            padding: 0;
+            border: 1px solid #888;
+            width: 80%;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+            -webkit-animation-name: animatetop;
+            -webkit-animation-duration: 0.4s;
+            animation-name: animatetop;
+            animation-duration: 0.4s
+        }
+        
+        @-webkit-keyframes animatetop {
+            from {top:-300px; opacity:0} 
+            to {top:0; opacity:1}
+        }
+        
+        @keyframes animatetop {
+            from {top:-300px; opacity:0}
+            to {top:0; opacity:1}
+        }
+        
+        .close {
+            color: white;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        
+        .modal-header {
+            padding: 2px 16px;
+            background-color: #b85c99;
+            color: white;
+        }
+        
+        .modal-body {padding: 2px 16px;}
+        
+        .modal-footer {
+            padding: 2px 16px;
+            background-color: #b85ca1;
+            color: white;
+        }
+        p {
+        background-color:rgb(247, 196, 211);
+    }
+    </style>
+
+    <script>
+        var modal = document.getElementById('myModal');
+        
+        var btn = document.getElementById("myBtn");
+        
+        var span = document.getElementsByClassName("close")[0];
+        
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+        
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+<!-- choose gender -->
+<p style="color: black;">choose your friend:</p>
+
+    <div class="tab">
+        <button class="tablinks active" onclick="openFriend(event, 'girl')">girl</button>
+        <button class="tablinks" onclick="openFriend(event, 'boy')">boy</button>
+        <button class="tablinks" onclick="openFriend(event, 'neutural')">neutural</button>
+    </div>
+
+    <div id="girl" class="tabcontent" style="display: block;color:#f7d8e5">
+        <h3>girlfriend</h3>
+        <p>&#128103</p>
+    </div>
+
+    <div id="boy" class="tabcontent" style="display: none;color: #f7d8e5">
+        <h3>boyfriend</h3>
+        <p>&#128102</p>
+    </div>
+
+    <div id="neutural" class="tabcontent" style="display: none;color: #f7d8e5">
+        <h3>neutural</h3>
+        <p></p>
+    </div>
+    <style>
+        body {font-family: "Lato", sans-serif;}
+        
+        div.tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+        }
+        
+        div.tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+        
+        div.tab button:hover {
+            background-color: #ddd;
+        }
+        
+        div.tab button.active {
+            background-color: #ccc;
+        }
+        
+        .tabcontent {
+            display: none;
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
+
+    </style>
+
+    <script>
+        function openFriend(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+
+<!-- Make image of partner -->
+
+
+<body>
+    <p style="color: black">
+        Tell us your type:)(keywords are fine like "blond hair" "wear glasses"):
+    </p>
+	<input type="text" id="Prompts">
+	<button onclick="makePtner()">make my cyber friend</button>
+<script>
+    function makePtner(){
+        fetch('https://127.0.0.1:5000/session_id', {
+            method: 'GET',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({})
+        }).then(response => {
+            prompts = document.getElementById("Prompts").value
+            console.log(prompts)
+            fetch('https://127.0.0.1:5000/image', {
+                method: 'POST',
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({"session_id": response.session_id, "prompts": prompts})
+            }).then(response => response.json())
+        })
+    }
+    
+
+    // .then(response => response.json())
+    // .then(response => console.log(JSON.stringify(response)))
+</script>
+</body>
+
+
+
+    <!-- <form action="demo_form.php">
+        Tell us your type:)(keywords are fine like "blond hair" "wear glasses"):
+         <input type="text" name="fname" size="50"><br>
+        <input type="submit" value="submit">
+    </form>
+
+    <button id="makeButn" onclick="makePtner()">make my cyber partner!</button> -->
+
+    <!-- <script>
+        function makePtner(){
+            window.location.href='make_image.html';
+        }
+        </script> -->
+
+</html>
